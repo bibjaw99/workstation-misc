@@ -1,3 +1,32 @@
+## remapping with xremap
+
+- `/etc/xremap/config.yml`
+
+```yml
+modmap:
+  - name: Numpad Minus
+    remap:
+      KEY_KPMINUS: KEY_MINUS
+```
+
+- `/etc/systemd/system/xremap.service`
+
+```toml
+[Unit]
+Description=xremap
+
+[Service]
+Type=oneshot
+KillMode=process
+ExecStart=/usr/bin/xremap /etc/xremap/config.yml
+ExecStop=/usr/bin/killall xremap
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
+```
+
 ### Drivers:
 
 ```sh
