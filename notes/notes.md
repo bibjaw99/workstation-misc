@@ -307,9 +307,12 @@ EndSection
 
 ```
 QT_QPA_PLATFORMTHEME=gtk3
-BROWSER=firefox-developer-edition
+BROWSER=librewolf
 EDITOR=nvim
-TERMINAL=ghostty
+TERMINAL=footclient
+XDG_CURRENT_DESKTOP=sway
+XDG_SESSION_DESKTOP=sway
+XDG_SESSION_TYPE=wayland
 ```
 
 ## sddm sugar-candy theme
