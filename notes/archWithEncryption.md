@@ -109,42 +109,42 @@ title	Arch Linux
 linux	/vmlinuz-linux
 initrd	/intel-ucode.img
 initrd	/initramfs-linux.img
-options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw
+options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw rd.luks.options=password-echo=no
 
 # arch-fb.conf
 title	Arch Linux Fallback Image
 linux	/vmlinuz-linux
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-fallback.img
-options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw
+options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw rd.luks.options=password-echo=no
 
 # arch-lts.conf
 title	Arch Linux LTS
 linux	/vmlinuz-linux-lts
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-lts.img
-options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw
+options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw rd.luks.options=password-echo=no
 
 # arch-lts-fb.conf
 title	Arch Linux LTS Fallback
 linux	/vmlinuz-linux-lts
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-lts-fallback.img
-options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw
+options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw rd.luks.options=password-echo=no
 
 # arch-zen.conf
 title	Arch Linux Zen
 linux	/vmlinuz-linux-zen
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-zen.img
-options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw
+options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw rd.luks.options=password-echo=no
 
 # arch-zen-fb.conf
 title	Arch Linux Zen Fallback
 linux	/vmlinuz-linux-zen
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-zen-fallback.img
-options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw
+options	rd.luks.name=UUID=cryptroot root=/dev/mapper/cryptroot rw rd.luks.options=password-echo=no
 
 $ exit
 $ umount -a
